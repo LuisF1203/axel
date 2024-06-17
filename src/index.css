@@ -13,8 +13,12 @@ body, html {
   width: 100%;
   box-sizing: border-box;
   background-color: rgb(26, 26, 26);
-}
 
+}
+*{
+  overflow: none;
+  overflow-x: none;
+}
 .App {
   padding: 20px;
 }
@@ -37,10 +41,23 @@ body, html {
   transition: transform 0.3s ease;
 }
 
-.grid-item img:hover {
-  transform: scale(1.05);
+.my-masonry-grid {
+  display: -webkit-box; /* Not needed if autoprefixing */
+  display: -ms-flexbox; /* Not needed if autoprefixing */
+  display: flex;
+  margin-left: -30px; /* gutter size offset */
+  width: auto;
+}
+.my-masonry-grid_column {
+  padding-left: 30px; /* gutter size */
+  background-clip: padding-box;
 }
 
+/* Style your items */
+.my-masonry-grid_column > div { /* change div to reference your elements you put in <Masonry> */
+  background: grey;
+  margin-bottom: 30px;
+}
 
 .grid-item video {
   display: block;

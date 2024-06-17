@@ -1,4 +1,9 @@
 export { default as Home } from "./Home";
 export { default as Login } from "./Login";
 export { default as Register } from "./Register";
+export { default as Images } from "./Images";
+export { default as Regalos } from "./Regalos";
+export { default as Sr } from "./Sr";
+export { default as Ss } from "./Ss";
+export { default as Videos } from "./Videos";
 export { default as NotFound } from "./NotFound";

@@ -5,7 +5,12 @@ import{
   Home,
   NotFound,
   Login,
-  Register
+  Register,
+  Ss,
+  Sr,
+  Videos,
+  Images,
+  Regalos
 }from "./views"
 
 function App() {
@@ -15,6 +20,11 @@ function App() {
       <Route path="/" element={<Home />} />
       <Route path="/login" element={<Login />} />
       <Route path="/register" element={<Register />} />
+      <Route path="/Ss" element={<Ss />} />
+      <Route path="/Sr" element={<Sr />} />
+      <Route path="/Videos" element={<Videos />} />
+      <Route path="/Images" element={<Images />} />
+      <Route path="/Regalos" element={<Regalos />} />
       <Route path="*" element={<NotFound />} />
     </Routes>
   );
